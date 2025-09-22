@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>XML to JSON Converter</title>
+<!--    <link rel="stylesheet" th:href="@{/css/style.css}">-->
+</head>
+<body>
+<div class="container">
+    <h1>XML to JSON Converter</h1>
+
+    <form id="conversionForm">
+        <div>
+            <input type="file" id="xmlFile" accept=".xml">
+            <textarea id="xmlContent" placeholder="Or paste XML here..."></textarea>
+        </div>
+        <button id="xmlConvert" type="submit">Convert</button>
+    </form>
+
+    <div id="result">RESULTADO DE PROCESAMIENTO
+    </div>
+</div>
+<script src="/webjars/sockjs-client/1.1.2/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+<script th:src="@{/js/webSocketConnection.js}"></script>
+<script th:src="@{/js/xmlHandler.js}"></script>
+</body>
+</html>
