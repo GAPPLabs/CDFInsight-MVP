@@ -1,0 +1,323 @@
+# CDFInsight-MVP .gitignore
+# Comprehensive gitignore for Java Spring Boot project
+
+######################
+# Compiled class files
+######################
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+######################
+# Package Files
+######################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+######################
+# Maven
+######################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+######################
+# Gradle
+######################
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+######################
+# Spring Boot
+######################
+spring-boot-*.jar
+*.original
+
+######################
+# IntelliJ IDEA
+######################
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+######################
+# Eclipse
+######################
+.classpath
+.project
+.settings/
+bin/
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommendationx
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+######################
+# NetBeans
+######################
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+######################
+# Visual Studio Code
+######################
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+######################
+# Sublime Text
+######################
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+######################
+# Vim
+######################
+*~
+*.swp
+*.swo
+.netrwhist
+
+######################
+# macOS
+######################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+######################
+# Windows
+######################
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+######################
+# Linux
+######################
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+######################
+# Logs
+######################
+logs/
+*.log
+*.log.*
+*.out
+
+######################
+# Application specific files
+######################
+# H2 Database
+*.db
+*.trace.db
+*.lock.db
+
+# Properties files (sensitive data)
+application-local.properties
+application-secrets.properties
+*-secrets.yml
+
+# Upload directories
+uploads/
+temp/
+tmp/
+
+# Generated documentation
+docs/generated/
+
+######################
+# Testing
+######################
+.coverage
+coverage/
+*.lcov
+.nyc_output
+
+# TestContainers
+.testcontainers/
+
+######################
+# Docker
+######################
+.dockerignore
+docker-compose.override.yml
+
+######################
+# Kubernetes
+######################
+*.kubeconfig
+
+######################
+# Security & Credentials
+######################
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.truststore
+secrets.yml
+.env
+.env.local
+.env.*.local
+
+######################
+# IDE Plugin specific files
+######################
+# SonarLint plugin
+.sonarlint/
+
+# Editor directories and files
+.cache
+.parcel-cache
+.temp
+.sass-cache
+
+######################
+# Backup files
+######################
+*.backup
+*.old
+*.orig
+
+######################
+# CDFInsight specific
+######################
+# XML processing temp files
+xml-temp/
+processed-files/
+
+# RabbitMQ data (if running locally)
+rabbitmq-data/
+
+# Application specific uploads
+uploaded-xmls/
+converted-jsons/
+
+######################
+# JetBrains IDEs
+######################
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle and Maven with auto-import
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# SonarLint plugin
+.idea/sonarIssues.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
